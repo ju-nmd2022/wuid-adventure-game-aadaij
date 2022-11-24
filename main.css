@@ -1,0 +1,95 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  background-color: white;
+  font-family: "Cormorant Garamond", serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 10vh repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+}
+
+.item-one {
+  grid-area: 2 / 4 / 3 / 5;
+  visibility: hidden;
+}
+.item-two {
+  grid-area: 3 / 4 / 4 / 5;
+  visibility: hidden;
+}
+.item-three {
+  grid-area: 4 / 4 / 5 / 5;
+  visibility: hidden;
+}
+.item-four {
+  grid-area: 5 / 4 / 6 / 5;
+  visibility: hidden;
+}
+.item {
+  background-color: #f1eee5;
+  margin-left: 0px;
+}
+.item img {
+  max-width: 6em;
+}
+
+.arrow-left {
+  grid-area: 3 / 1 / 5 / 2;
+  visibility: hidden;
+}
+.arrow-right {
+  grid-area: 3 / 5 / 5 / 6;
+  visibility: hidden;
+}
+.arrow {
+  background-color: balck;
+  margin: auto;
+}
+.arrow img {
+  max-width: 5em;
+}
+
+.view {
+  grid-area: 2 / 2 / 6 / 4;
+}
+
+.view img {
+  max-height: 85vh;
+}
+
+.text-box {
+  grid-area: 1 / 2 / 2 / 5;
+  margin: auto;
+  max-width: 30em;
+  color: #aa0e3d;
+}
+
+.click-zone-mat {
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  /* border: 2px solid blue; */
+  left: 450px;
+  top: 475px;
+}
+
+.click-zone-door {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  /* border: 2px solid blue; */
+  left: 450px;
+  top: 350px;
+}

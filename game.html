@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watering Game</title>
+    <link rel="stylesheet" href="game.css" />
+    <script src="game.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image" href="Photos/watering-can.jpg" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- all the items -->
+      <div class="item-one item">
+        <img src="Photos/key.jpg" class="image" alt="" />
+      </div>
+      <div class="item-two item">
+        <img src="Photos/spray-bottle.jpg" alt="" />
+      </div>
+      <div id="can" class="item-three item">
+        <img src="photos/watering-can.jpg" alt="" />
+      </div>
+      <div class="item-four item">
+        <img src="Photos/fertalizer.jpg" alt="" />
+      </div>
+      <!-- end of items -->
+      <!-- start of photo carousel -->
+      <div class="view">
+        <img id="view" src="Photos/desk.jpg" alt="" />
+      </div>
+
+      <!-- end of photo carousel  -->
+      <!-- start of arrows -->
+      <div class="arrow-right arrow">
+        <img src="Photos/arrow-right.png" alt="" />
+      </div>
+      <div class="arrow-left arrow">
+        <a href="window.html"><img src="Photos/arrow-left.png" alt="" /></a>
+      </div>
+      <!-- end of arrows  -->
+      <div class="text-box">
+        <p id="changableText">
+          It says on the calendar the plant should have been watered yesterday!
+        </p>
+      </div>
+      <!-- click zones  -->
+      <div id="clickZoneCan" class="click-zone-can"></div>
+      <div id="clickZoneCalender" class="click-zone-calender"></div>
+    </div>
+  </body>
+</html>
