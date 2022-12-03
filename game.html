@@ -15,25 +15,25 @@
     />
     <link rel="icon" type="image" href="Photos/watering-can.jpg" />
   </head>
-  <body>
+  <body onload="game()">
     <div class="grid-container">
       <!-- all the items -->
-      <div class="item-one item">
+      <div id="keyGame" class="item-one item">
         <img src="Photos/key.jpg" class="image" alt="" />
       </div>
-      <div class="item-two item">
+      <div id="sprayGame" class="item-two item">
         <img src="Photos/spray-bottle.jpg" alt="" />
       </div>
-      <div id="can" class="item-three item">
+      <div id="canGame" class="item-three item">
         <img src="photos/watering-can.jpg" alt="" />
       </div>
-      <div class="item-four item">
+      <div id="fertalizerGame" class="item-four item">
         <img src="Photos/fertalizer.jpg" alt="" />
       </div>
       <!-- end of items -->
       <!-- start of photo carousel -->
       <div class="view">
-        <img id="view" src="Photos/desk.jpg" alt="" />
+        <img id="viewGame" src="Photos/desk.jpg" alt="" />
       </div>
 
       <!-- end of photo carousel  -->
@@ -46,7 +46,7 @@
       </div>
       <!-- end of arrows  -->
       <div class="text-box">
-        <p id="changableText">
+        <p id="changableTextGame">
           It says on the calendar the plant should have been watered yesterday!
         </p>
       </div>

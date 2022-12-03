@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Watering Game</title>
     <link rel="stylesheet" href="window.css" />
-    <script src="window.js" defer></script>
+    <script src="game.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,25 +15,25 @@
     />
     <link rel="icon" type="image" href="Photos/watering-can.jpg" />
   </head>
-  <body>
+  <body onload="windowFunction()">
     <div class="grid-container">
       <!-- all the items -->
-      <div class="item-one item">
+      <div id="keyWindow" class="item-one item">
         <img src="Photos/key.jpg" class="image" alt="" />
       </div>
-      <div class="item-two item">
+      <div id="sprayWindow" class="item-two item">
         <img src="Photos/spray-bottle.jpg" alt="" />
       </div>
-      <div id="can" class="item-three item">
+      <div id="canWindow" class="item-three item">
         <img src="photos/watering-can.jpg" alt="" />
       </div>
-      <div class="item-four item">
+      <div id="fertalizerWindow" class="item-four item">
         <img src="Photos/fertalizer.jpg" alt="" />
       </div>
       <!-- end of items -->
       <!-- start of photo carousel -->
       <div class="view">
-        <img id="view" src="Photos/window.jpg" alt="" />
+        <img id="viewWindow" src="Photos/window.jpg" alt="" />
       </div>
 
       <!-- end of photo carousel  -->
@@ -46,7 +46,7 @@
       </div>
       <!-- end of arrows  -->
       <div class="text-box">
-        <p id="changableText"></p>
+        <p id="changableTextWindow"></p>
       </div>
       <!-- click zones  -->
       <div id="clickZonePlant" class="click-zone-plant"></div>

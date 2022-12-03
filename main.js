@@ -25,7 +25,7 @@ function clickUpdates() {
   return next;
 }
 
-// source for making a if statement with the visibility as the condition https://cs50.stackexchange.com/questions/41168/how-to-fix-if-statements-within-event-listeners-in-javascript
+// source for making an if statement with the visibility as the condition https://cs50.stackexchange.com/questions/41168/how-to-fix-if-statements-within-event-listeners-in-javascript
 function openDoor() {
   var key = document.getElementById("key");
   if (key.style.visibility == "visible") {
