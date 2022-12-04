@@ -8,14 +8,15 @@ function init() {
 }
 
 function clickUpdates() {
+  var view = document.getElementById("view");
   var count = 0;
   var next = function () {
     switch (count) {
       case 0:
-        document.getElementById("view").src = "Photos/enterance-key.jpg";
+        view.src = "Photos/enterance-key.jpg";
         break;
       case 1:
-        document.getElementById("view").src = "Photos/enterance-exit.jpg";
+        view.src = "Photos/enterance-exit.jpg";
         document.getElementById("key").style.visibility = "visible";
         break;
     }

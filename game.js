@@ -6,7 +6,7 @@ const isWaterCanFull = sessionStorage.getItem("waterCanFull");
 
 // everything for the game.html
 function game() {
-  const gameView = document.getElementById("viewGame");
+  const viewGame = document.getElementById("viewGame");
   const textGame = document.getElementById("changableTextGame");
   const clickZoneCalendar = document.getElementById("clickZoneCalender");
   const clickZoneCan = document.getElementById("clickZoneCan");
@@ -16,7 +16,7 @@ function game() {
     if (isCanVisible == "true") {
       var can = document.getElementById("canGame");
       can.style.visibility = "visible";
-      gameView.src = "Photos/desk-without.jpg";
+      viewGame.src = "Photos/desk-without.jpg";
       clickZoneCan.style.visibility = "hidden";
     }
     if (isSprayVisible == "true") {
@@ -105,7 +105,7 @@ function windowFunction() {
       fertalizerWindow.style.visibility = "hidden";
       //   source for time out https://stackoverflow.com/questions/15719729/i-want-to-load-another-html-page-after-a-specific-amount-of-time
       setTimeout(function () {
-        window.location.href = "end.html";
+        window.open("end.html", "_self");
       }, 4000);
     } else if (
       isWaterCanFull != "ture" &&
