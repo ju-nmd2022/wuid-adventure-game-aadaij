@@ -48,7 +48,7 @@ function game() {
   function watercan() {
     var can = document.getElementById("canGame");
     can.style.visibility = "visible";
-    gameView.src = "Photos/desk-without.jpg";
+    viewGame.src = "Photos/desk-without.jpg";
     clickZoneCan.style.visibility = "hidden";
     sessionStorage.setItem("watercanVisibility", true);
   }
