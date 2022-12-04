@@ -5,7 +5,8 @@
 body {
   background-color: white;
   font-family: "Cormorant Garamond", serif;
-  height: 100%;
+  width: 1280px;
+  height: 619px;
   overflow: hidden;
 }
 

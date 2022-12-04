@@ -12,10 +12,10 @@ function clickUpdates() {
   var next = function () {
     switch (count) {
       case 0:
-        document.getElementById("view").src = "photos/enterance-key.jpg";
+        document.getElementById("view").src = "Photos/enterance-key.jpg";
         break;
       case 1:
-        document.getElementById("view").src = "photos/enterance-exit.jpg";
+        document.getElementById("view").src = "Photos/enterance-exit.jpg";
         document.getElementById("key").style.visibility = "visible";
         break;
     }
